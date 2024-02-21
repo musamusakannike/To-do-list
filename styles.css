@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, #0e1c26, #294861);
+    color: #fff;
+    overflow-y: hidden;
+}
+
+body > section#app-container {
+    max-height: 90%;
+    overflow-y: scroll;
+    background: linear-gradient(90deg, #294861, #0e1c26);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 750;
+    color: #fff;
+}
+
+.input-container input {
+    width: 280px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-container button {
+    background: linear-gradient(90deg, #0094ff, #8f00ff);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: left;
+}
+
+ul,
+li,
+div#incomplete-container,
+div#complete-container {
+    transition: 0.8s;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: linear-gradient(90deg, #0e1c26, #294861);
+    margin: 3px 0;
+    padding: 2px;
+    font-weight: normal;
+    font-size: 20px;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+}
+
+ul li button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+ul li button.check {
+    background: linear-gradient(90deg, dodgerblue, darkslateblue);
+}
+
+ul li button.trash {
+    background: linear-gradient(90deg, deeppink, #dc3545);
+}
+
+ul li button i.fa-trash,
+ul li button i.fa-check {
+    color: #ccc;
+    margin: 0 15px;
+}
